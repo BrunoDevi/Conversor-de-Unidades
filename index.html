@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Conversor de Unidades</title>
+</head>
+<body>
+    <main class="container">
+        <h1 class="container__title">Conversor de Unidades</h1>
+        <section class="container__content">
+            <section class="content__style">
+                <p class="container__paragraph">Digite a quantidade:</p>
+                <input id="amount__input" class="inside__text container__data" type="text">
+            </section>
+
+            <section class="content__style">
+                <p class="container__paragraph">De:</p>
+                <select id="entry__input" class="container__data inside__text pointer__hover">
+                    <option value="empty">Selecione<v/option></v>
+                    <option value="milimetros">Milimetro(s)<v/option>
+                    <option value="centimetros">Centimetro(s)</option>
+                    <option value="metros">Metro(s)</option>
+                    <option value="kilometros">Kilometro(s)</option>
+                </select>
+            </section>
+
+            <section class="content__style">
+                <p class="container__paragraph">Para:</p>
+                <select id="exit__input" class="container__data inside__text pointer__hover">
+                    <option value="empty">Selecione<v/option></v>
+                    <option value="milimetros">Milimetro(s)<v/option>
+                    <option value="centimetros">Centimetro(s)</option>
+                    <option value="metros">Metro(s)</option>
+                    <option value="kilometros">Kilometro(s)</option>
+                </select>
+            </section>
+            
+            <section class="content__button">
+                <button id="button" onclick="converter()" type="button">Converter</button>
+                <button id="button" onclick="resetar()" type="button">Resetar</button>
+            </section>
+
+            <section class="result__data">
+                <div class="container__data inside__text">
+                    <p id="resultado">Resultado</p>
+                </div>
+            </section>
+        </section>
+    </main>
+</body>
+<script src="app.js"></script>
+</html>
